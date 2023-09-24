@@ -31,10 +31,18 @@ function cpuChoise() {
     return opciones[cpurandon];
 }
 
+
+
 function juegoppt(userselect){
+    //Pasamos a text las selecciones con nombres canonicos
     var cpuselect = cpuChoise();
     var userselecttext = opciones[userselect];
 
+    //dibujamos selección de CPU
+    var pathimg = '<img src="img/' + cpuselect + '.png"></img>'; 
+    document.getElementById('cpuimg').innerHTML=pathimg;
+
+    //
     switch (userselecttext + cpuselect) {
         case "piedratijeras":
         case "papelpiedra":
@@ -63,6 +71,10 @@ function restartElementos() {
     scoreuser = 0;
     scorecpu = 0;
     writeScore();
+    
+    var pathimg = '<img src="img/question.png"></img>'; 
+    document.getElementById('cpuimg').innerHTML=pathimg;
+
     console.log("Se restablecieron los valores")
 }
 
