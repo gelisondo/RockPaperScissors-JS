@@ -1,0 +1,103 @@
+body {
+    background-image: url('img/fondo-80s.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+} 
+
+#restart {
+    margin-bottom: 1%;
+    border-style: double;
+    border-radius: 10%;
+    font-size: large;
+}
+
+
+.contenedor-puntajes {
+    border-style: solid;
+    display: flex;
+    justify-content:space-around;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    width: auto;
+    height: 30%;
+}
+
+#cage-user {
+    color: white;
+    background-color: black;
+    font-size: large;
+    padding: 5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+#cage-score {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: x-large;
+    align-self: center; 
+
+}
+
+#cage-cpu {
+    color: white;
+    background-color: black;
+    font-size: large;
+    padding: 5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.element-game  {
+    margin-top: 1%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+} 
+
+#rock-img {
+    width: 128px;
+    height: 128px;
+    transition: width 0.5s, height 0.5s;
+}
+
+#rock-img:hover {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
+
+#paper-img {
+    width: 128px;
+    height: 128px;
+    background-color: transparent;
+    transition: width 0.5s, height 0.5s, background-color 0.5s;
+}
+
+#paper-img:hover {
+    width: 150px;
+    height: 150px;
+    background-color: rgba(rgba(183, 0, 255, 0.686), green, blue, alpha);
+    cursor: pointer;
+}
+
+
+#scissors-img {
+    width: 128px;
+    height: 128px;
+    transition: width 0.5s, height 0.5s;
+}
+
+#scissors-img:hover {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
