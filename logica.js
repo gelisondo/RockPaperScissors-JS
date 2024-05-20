@@ -1,6 +1,3 @@
-var obj0 = "piedra";
-var obj1 = "papel";
-var obj2 = "tijeras";
 
 let scoreuser = 0;
 let scorecpu = 0;
